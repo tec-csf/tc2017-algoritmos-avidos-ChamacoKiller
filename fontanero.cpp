@@ -7,14 +7,14 @@
 #include <iostream>
 using namespace std;
 
-void swap(int *xp, int *yp)
+void swap(int *x, int *y)
 {
-  int temp = *xp;
-  *xp = *yp;
-  *yp = temp;
+  int t = *x;
+  *x = *y;
+  *y = t;
 }
 
-//Función para implementar BubbleSort
+//Implementando BubbleSort
 void bubbleSort(int arr[], int n)
 {
     int i, j;
@@ -32,7 +32,7 @@ int  main() {
   int totalT = 0;
   int total = 0;
 
-  cout<<"Lugares va a visitar el plomero:"<<endl;
+  cout<<"Lugares que visita el plomero:"<<endl;
   cin>>lugares;
 
   for (int i = 0; i < lugares; i++) {
@@ -53,6 +53,4 @@ int  main() {
       cout<<"Tiempo tardado: "<<"lugar: "<<lugares << " "<<totalT<< " minutos"<<endl;
     }
   }
-
-
 }
