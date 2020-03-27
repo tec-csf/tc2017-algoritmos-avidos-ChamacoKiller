@@ -34,18 +34,15 @@ int  main() {
 
   cout<<"Lugares que visita el plomero:"<<endl;
   cin>>lugares;
-
   for (int i = 0; i < lugares; i++) {
     cout<<"Tiempo ["<<i+1<<"] : "<<endl;
     cin>>tiempo[i];
   }
 
   bubbleSort(tiempo,lugares);
-
   cout<<"Tiempos ordenados: "<<endl;
 
   for (int j = 0; j < lugares; j++) {
-
     totalT = tiempo [j]+totalT;
     cout<<"Tiempo tardado para: "<<j+1 << " "<<totalT<< " minutos"<<endl;
     if (j==lugares) {
